@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/sohanrane0/pi-smart-display/issues"
   },
-  "homepage": "https://github.com/sohanrane0/pi-smart-display#readme"
+  "homepage": "https://github.com/sohanrane0/pi-smart-display#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
 }
