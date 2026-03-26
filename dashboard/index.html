@@ -6,7 +6,31 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="clock">00:00:00</div>
+  <div id="bg-blur"></div>
+
+  <div id="content">
+    <div id="clock">00:00:00</div>
+
+    <div id="spotify">
+      <img id="album-img" src="" alt="album art">
+      <div id="track-name">Not playing</div>
+      <div id="artist-name"></div>
+
+      <div id="controls">
+        <button class="ctrl-btn" onclick="spotifyAction('previous')">⏮</button>
+        <button class="ctrl-btn play" id="play-btn" onclick="togglePlay()">⏸</button>
+        <button class="ctrl-btn" onclick="spotifyAction('next')">⏭</button>
+      </div>
+
+      <div id="volume-row">
+        🔉
+        <input type="range" id="volume-slider" min="0" max="100" value="50" oninput="setVolume(this.value)">
+        🔊
+      </div>
+    </div>
+  </div>
+
   <script src="clock.js"></script>
+  <script src="spotify.js"></script>
 </body>
 </html>

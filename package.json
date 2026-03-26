@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/sohanrane0/pi-smart-display#readme",
   "dependencies": {
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1",
     "express": "^5.2.1"
   }
 }
